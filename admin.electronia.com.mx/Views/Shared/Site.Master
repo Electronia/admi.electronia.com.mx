@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/adminMain.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/tabs.css" rel="stylesheet" type="text/css" />
+    <script src="<%: Url.Content("~/Scripts/jquery-1.8.0.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.ui.core.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.ui.widget.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/jquery.ui.tabs.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/myAjax.js") %>" type="text/javascript"></script>
+    
+
+    <script>
+        $(function () {
+            $("#tabs").tabs({
+                ajaxOptions: {
+                    error: function (xhr, status, index, anchor) {
+                        $(anchor.hash).html(
+						"Couldn't load this tab. We'll try to fix this as soon as possible. " +
+						"If this wouldn't be a demo.");
+                    }
+                }
+            });
+
+            $("#list").tabs("option", "idPrefix", "ui-list-");
+
+        });
+
+	</script>
+</head>
+<body>
+    <div id="headerMainContainer">
+        <div id="headerOptions">
+            <a href="/admin?key=<%=Server.UrlEncode(ViewBag.key.ToString())%>"><div id="headerLogo"></div></a>
+            <div id="headerName"><span><%= ViewBag.nombre.ToString()%></span></div>
+            <div id="headerLinks">
+                <ul>
+                 <li><a href="">Inicio</a></li>
+                 <li><a href="http://localhost/nuevoarticulo/?key=<%=Server.UrlEncode(ViewBag.session.ToString())%>">Anunciate</a></li>
+                 <li><a href="">Ayuda</a></li>
+                 <li><a href="/admin/home/salir">Salir</a></li>
+                </ul>
+            </div>
+        </div>   
+    </div>
+    <div id="bodyMainContainer">
+        <div id="bodyContainer"> 
+  
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+     </div>
+    </div>
+    <div id="footerMainContainer">
+        <div id="footerContainer">
+                <a href="">Sobre Electronia</a><span>|</span>
+                <a href="">Terminos y condiciones</a><span>|</span>
+                <a href="">Políticas</a><span>|</span>
+                <a href="">Directorio</a><span>|</span>
+                <a href="">Sitios relacionados</a>
+        </div>
+    </div>           
+           
+      
+</body>
+</html>

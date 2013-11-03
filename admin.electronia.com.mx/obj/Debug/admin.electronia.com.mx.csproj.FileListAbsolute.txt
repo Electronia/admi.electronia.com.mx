@@ -1,0 +1,16 @@
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\admin.electronia.com.mx.dll
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\admin.electronia.com.mx.pdb
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\EntityFramework.dll
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\EntityFramework.xml
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\obj\Debug\ResolveAssemblyReference.cache
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\obj\Debug\admin.electronia.com.mx.dll
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\obj\Debug\admin.electronia.com.mx.pdb
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\Newtonsoft.Json.dll
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\System.Net.Http.dll
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\System.Net.Http.Formatting.dll
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\System.Net.Http.WebRequest.dll
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\Newtonsoft.Json.xml
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\System.Net.Http.xml
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\System.Net.Http.Formatting.xml
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\System.Net.Http.WebRequest.xml
+D:\websites\admin.electronia.com.mx\admin.electronia.com.mx\bin\System.Web.Optimization.dll
